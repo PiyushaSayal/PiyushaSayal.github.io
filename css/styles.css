@@ -156,6 +156,33 @@ h2 {
 }
 .navbar-toggle {
 }
+
+/* Style for the links */
+.scroll-link {
+  text-decoration: none; /* Remove underline */
+  position: relative; /* Create a stacking context for pseudo-elements */
+  padding: 5px 10px; /* Add some padding around the text */
+}
+
+/* Define the hidden border */
+.scroll-link::before {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute; /* Position it relative to the link */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid transparent; /* Initial border color (transparent) */
+  visibility: hidden; /* Initially hidden */
+  transition: border-color 0.3s; /* Add a transition for smooth effect */
+}
+
+/* Change the border color on hover */
+.scroll-link:hover::before {
+  visibility: visible; /* Show the border on hover */
+  border-color: gray; /* Change the border color to gray */
+}
+
 .addBg {
 background: #000 !important;
 -webkit-box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
