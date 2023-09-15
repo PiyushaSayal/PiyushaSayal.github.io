@@ -276,6 +276,22 @@ box-shadow: 0px 3px 4px 0px rgba(50, 50, 50, 0.38);
 	border-radius: 2px;
 	
 }
+
+.navbar-inverse .navbar-nav > .active > a {
+    color: black; /* Set the default text color to black */
+    background-color: grey; /* Set the default background color to grey */
+    border: 1px solid black; /* Add a black border */
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none; /* Remove underlines from links */
+    transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: white; /* Set text color to white on hover */
+    background-color: grey; /* Keep the background color grey on hover */
+    border: 1px solid black; /* Keep the black border on hover */
+}
+
 .navbar-nav > li:hover > a {
 	color: #fff;
 }
