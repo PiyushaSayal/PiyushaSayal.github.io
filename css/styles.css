@@ -114,6 +114,11 @@ h2 {
 	padding-bottom: 16px;
 	font-variant: small-caps;
 }
+Button{
+     Display:block;
+     Margin: auto;
+}
+
 /* Header 
 ----------------------------------------------*/
 .header {
@@ -962,7 +967,7 @@ footer {
 background: #DBDBDB;	
 	}
 #contactUs{
-	 background: #3394D5;
+	 background: #A9A9A9;
 }
 #contactUs p{
 color:#000;
