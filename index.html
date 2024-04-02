@@ -27,6 +27,34 @@
 <link rel="stylesheet" href="css/styles.css" />
 <!-- Font Awesome -->
 <link href="css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    justify-content: space-between;
+  }
+  .skill-group {
+    flex-basis: calc(33.333% - 20px); /* Adjust the 20px to increase/decrease space between columns */
+    margin-bottom: 20px;
+  }
+  .skill-group h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  .skill-group ul {
+    list-style: none;
+    padding: 0;
+  }
+  .skill-group ul li::before {
+    content: '✓';
+    color: #4CAF50; /* Change this color to match your design */
+    margin-right: 5px;
+    font-size: 14px;
+  }
+</style>
 </head>
 
 <body>
@@ -157,192 +185,40 @@ But that's not the whole story. I've got a knack for teaching, grading assignmen
       <!-- Heading -->
       <h2>Skills</h2>
     </div>
-    <div class="row skillContainer">
-      <!-- Methodologies & Programming Languages -->
-      <div class="col-md-3 skillBox">
-        <h4 style="font-weight: bold;">Programming Languages</h4>
-        <div class="skill">
-          <i class="fa fa-code"></i>
-          <p>Python</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-cogs"></i>
-          <p>Agile/Scrum</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-tachometer"></i>
-          <p>SDLC</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-flask"></i>
-          <p>R Studio</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-language"></i>
-          <p>Natural Language Processing and NLTK</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-flask"></i>
-          <p>Machine Learning</p>
-        </div>
-      </div>
-
-      <!-- Analytics Skills -->
-      <div class="col-md-3 skillBox">
-        <h4 style="font-weight: bold;">Analytics and Visualization Skills</h4>
-        <div class="skill">
-          <i class="fa fa-line-chart"></i>
-          <p>Alteryx</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-pie-chart"></i>
-          <p>Stata</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-database"></i>
-          <p>SQL and NoSQL</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-tachometer"></i>
-          <p>RapidMiner</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-globe"></i>
-          <p>Web Scraping</p>
-        </div>
-	<div class="skill">
-          <i class="fa fa-database"></i>
-          <p>Big Data</p>
-        </div>
-      </div>
-
-      <!-- Visualization Skills -->
-      <div class="col-md-3 skillBox">
-        <br/><br/>
-        <div class="skill">
-          <i class="fa fa-bar-chart"></i>
-          <p>Tableau</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-line-chart"></i>
-          <p>Power BI</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-bar-chart"></i>
-          <p>Cognos</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-line-chart"></i>
-          <p>Statistics</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-database"></i>
-          <p>Data Mining</p>
-        </div>
-      </div>
-
-      <!-- Soft Skills -->
-      <div class="col-md-3 skillBox">
-        <h4 style="font-weight: bold;">Soft Skills</h4>
-        <div class="skill">
-          <i class="fa fa-users"></i>
-          <p>Leadership</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-line-chart"></i>
-          <p>Strategic Planning</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-comments"></i>
-          <p>Communication Skills</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-clock-o"></i>
-          <p>Time Management Skills</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-lightbulb-o"></i>
-          <p>Critical Thinking</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-check-circle"></i>
-          <p>Decision Making</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Other Skills -->
-    <div class="row">
-      <div class="col-md-4 skillBox">
-        <h4 style="font-weight: bold;">Additional Skills</h4>
-        <div class="skill">
-          <i class="fa fa-money"></i>
-          <p>Financial and Economic Analysis</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-sitemap"></i>
-          <p>Impact analysis</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-sliders"></i>
-          <p>GAP analysis</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-exclamation-triangle"></i>
-          <p>Risk analysis</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-cubes"></i>
-          <p>ERP</p>
-        </div>
-      </div>
-      <div class="col-md-4 skillBox">
-        <br/>
-        <div class="skill">
-          <i class="fa fa-bullseye"></i>
-          <p>SWOT Analysis</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-ticket"></i>
-          <p>Jira</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-share-alt"></i>
-          <p>Microsoft Visio</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-line-chart"></i>
-          <p>Digital marketing</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-briefcase"></i>
-          <p>CRM</p>
-        </div>
-      </div>
-      <div class="col-md-4 skillBox">
-        <br/>
-        <div class="skill">
-          <i class="fa fa-table"></i>
-          <p>MS Excel</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-github"></i>
-          <p>GitHub</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-git"></i>
-          <p>Git</p>
-        </div>
-        <div class="skill">
-          <i class="fa fa-paint-brush"></i>
-          <p>Figma</p>
-        </div>
-        <!-- Add more skills here -->
-      </div>
-      <div class="col-md-3 skillBox">
-        <!-- Empty Column -->
-      </div>
-    </div>
+    <div class="skills-container">
+  <div class="skill-group">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Python, SQL, R</li>
+      <li>Power BI, Tableau</li>
+      <li>C++, Statistical Modeling</li>
+      <li>Excel, Hadoop, Pyspark</li>
+      <li>Cloud Computing, SAP</li>
+      <li>Web Scraping, Alteryx</li>
+      <li>Machine Learning, JIRA</li>
+      <li>Stata, Agile Methodologies</li>
+      <li>Financial Analysis</li>
+    </ul>
+  </div>
+  <div class="skill-group">
+    <h2>Awards & Certifications</h2>
+    <ul>
+      <li>Academic Scholarship (NJIT)</li>
+      <li>Big Data (IBM)</li>
+      <li>Digital Marketing (Google)</li>
+    </ul>
+  </div>
+  <div class="skill-group">
+    <h2>Internship Experience</h2>
+    <ul>
+      <li>Data Analytics (Accenture & KPMG)</li>
+      <li>Technology Consulting (SAP)</li>
+      <li>Power BI (PwC)</li>
+    </ul>
+  </div>
+</div>
+     
+   
   </div>
 </section>
 
